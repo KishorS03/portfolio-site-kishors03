@@ -2,17 +2,58 @@ body {
 	background-color: lightblue;
 }
 
+.logo {
+	width: 70px;
+	height: 70px;
+}
+
+.nav {
+	font-size: 27px; 
+	font-family: 'Oswald', sans-serif;
+	text-align: left;
+}
+
+.nav a {
+	color: red;
+	position: relative;
+	bottom: 25px;
+	text-decoration: none;
+}
+
+
 .img1 {
 	width: 100px;
 	height: 100px;
 }
-.a1 ul {
-	font-size: 20px; 
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+
+.experience p {
+	font-size: 20px;
 }
 
-.a1 li {
-	display: inline;
+.coding p {
+	font-size: 20px;
+}
+
+.p_column {
+	float: left;
+}
+
+.p_row {
+	display: table;
+	position: relative;
+	
+}
+
+.p_row img {
+	border: 5px solid black;
+}
+
+.p_row p {
+	font-size: 20px;
+}
+
+
+.gaming img {
+	width: 400px;
+	height: auto;
 }
