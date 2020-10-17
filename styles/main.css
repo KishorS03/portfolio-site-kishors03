@@ -28,28 +28,61 @@ body {
 
 .experience p {
 	font-size: 20px;
+	margin-top: -20px;
 }
 
-.coding p {
+.code_row {
+	display: table;
+}
+
+.code_row h2 {
+	margin-bottom: 0px;
+}
+
+.code_row p {
 	font-size: 20px;
+	margin-top: 30px;
 }
 
-.p_column {
+.code_column {
 	float: left;
 }
 
-.p_row {
+.code_column img {
+	width: 450px;
+	height: auto;
+	margin-top: 0px;
+}
+
+.code_column figcaption {
+	text-align: center;
+}
+
+.photo_column {
+	float: left;
+}
+
+.photo_row {
 	display: table;
-	position: relative;
-	
 }
 
-.p_row img {
+.photo_row h2 {
+	margin-bottom: 0px;
+}
+
+.photo_row img {
 	border: 5px solid black;
+	width: 275px;
+	height: auto;
 }
 
-.p_row p {
+.photo_column figcaption {
+	text-align: center;
+}
+
+.photo_text p {
 	font-size: 20px;
+	margin-top: 25px;
 }
 
 
