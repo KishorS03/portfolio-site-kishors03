@@ -35,7 +35,7 @@ body {
 }
 
 .code_row h2 {
-	margin-bottom: 0px;
+	margin-bottom: -10px;
 	margin-top: -5px;
 }
 
@@ -56,12 +56,6 @@ body {
 	margin-left: -40px;
 }
 
-.code_column figcaption {
-	text-align: center;
-	margin-left: -50px;
-	font-size: 15px
-}
-
 .photo_column {
 	float: left;
 }
@@ -71,7 +65,7 @@ body {
 }
 
 .photo_row h2 {
-	margin-bottom: 0px;
+	margin-bottom: -10px;
 }
 
 .photo_row img {
@@ -117,17 +111,43 @@ body {
 .gaming_column img {
 	width: 400px;
 	height: auto;
-	margin-left: -35px
+	margin-left: -35px;
+	position: relative;
+	top: -25px;
 }
 
 .gaming_row h2 {
 	position: relative;
-	top: 0px;
+	top: -25px;
 }
 
 .gaming_text p {
-	margin-bottom: 0px;
 	position: relative;
+	top: -25px;
 	left: -30px;
 	font-size: 20px;
+}
+
+.sport_row h2 {
+	position: relative;
+	top: -50px;
+}
+
+.sport_column {
+	float: left;
+}
+
+.sport_column img {
+	width: 200px;
+	height: auto;
+	margin-left: -35px;
+	position: relative;
+	top: -50px;
+}
+
+.sport_text p {
+	font-size: 20px;
+	position: relative;
+	top: -75px;
+	left: -20px;
 }
