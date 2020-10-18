@@ -20,7 +20,6 @@ body {
 	text-decoration: none;
 }
 
-
 .img1 {
 	width: 100px;
 	height: 100px;
@@ -37,11 +36,14 @@ body {
 
 .code_row h2 {
 	margin-bottom: 0px;
+	margin-top: -5px;
 }
 
-.code_row p {
+.code_text p {
 	font-size: 20px;
-	margin-top: 30px;
+	margin-top: 20px;
+	position: relative;
+	left: -30px;
 }
 
 .code_column {
@@ -51,11 +53,13 @@ body {
 .code_column img {
 	width: 450px;
 	height: auto;
-	margin-top: 0px;
+	margin-left: -40px;
 }
 
 .code_column figcaption {
 	text-align: center;
+	margin-left: -50px;
+	font-size: 15px
 }
 
 .photo_column {
@@ -74,19 +78,56 @@ body {
 	border: 5px solid black;
 	width: 275px;
 	height: auto;
+	margin-left: -40px;
 }
 
 .photo_column figcaption {
 	text-align: center;
+	margin-left: -60px;
+	font-size: 15px;
 }
 
 .photo_text p {
 	font-size: 20px;
 	margin-top: 25px;
+	position: relative;
+	left: -30px;
 }
 
+.skills h1 {
+	margin-bottom: -15px;
+}
 
-.gaming img {
+.skills p {
+	font-size: 20px;
+}
+
+.gaming_row {
+	display: table;
+}
+
+.gaming_row h2 {
+	margin-bottom: -10px;
+}
+
+.gaming_column {
+	float: left;
+}
+
+.gaming_column img {
 	width: 400px;
 	height: auto;
+	margin-left: -35px
+}
+
+.gaming_row h2 {
+	position: relative;
+	top: 0px;
+}
+
+.gaming_text p {
+	margin-bottom: 0px;
+	position: relative;
+	left: -30px;
+	font-size: 20px;
 }
