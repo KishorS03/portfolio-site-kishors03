@@ -25,6 +25,56 @@ body {
 	height: 100px;
 }
 
+.about_me h1 {
+	margin-bottom: -15px;
+	margin-top: 5px;
+}
+
+.about_me p {
+	font-size: 20px;
+	margin-bottom: -7px;
+	margin-top: 10px;
+}
+
+.school_row h2 {
+	margin-bottom: -13px;
+	margin-top: 13px;
+}
+
+.school_column img {
+	width: 400px;
+	height: auto;
+	margin-left: -40px;
+}
+
+.school_text p {
+	font-size: 20px;
+	margin-top: 20px;
+	margin-left: 0px;
+}
+
+.waterloo_row h2 {
+	margin-bottom: -13px;
+	margin-top: 13px;
+}
+
+.waterloo_column {
+	float: left;
+}
+
+.waterloo_column img {
+	width: 400px;
+	height: auto;
+	margin-left: -40px
+}
+
+.waterloo_text p {
+	font-size: 20px;
+	margin-top: 20px;
+	position: relative;
+	left: -30px;
+}
+
 .experience p {
 	font-size: 20px;
 	margin-top: -20px;
@@ -87,6 +137,11 @@ body {
 	position: relative;
 	left: -30px;
 }
+
+
+
+
+
 
 .skills h1 {
 	margin-bottom: -15px;
