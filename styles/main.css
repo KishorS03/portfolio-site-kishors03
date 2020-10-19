@@ -156,16 +156,16 @@ body {
 	font-size: 20px;
 }
 
-.sport_row h2 {
+.hobby_row h2 {
 	position: relative;
 	top: -50px;
 }
 
-.sport_column {
+.hobby_column {
 	float: left;
 }
 
-.sport_column img {
+.hobby_column img {
 	width: 200px;
 	height: auto;
 	margin-left: -35px;
@@ -173,7 +173,7 @@ body {
 	top: -70px;
 }
 
-.sport_text p {
+.hobby_text p {
 	font-size: 20px;
 	position: relative;
 	top: -75px;
