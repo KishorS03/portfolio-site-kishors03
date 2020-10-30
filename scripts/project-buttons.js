@@ -13,5 +13,5 @@ function toggleText() {
 	} else {
 		x.innerHTML = "Swap Text";
 	}
-
 }
+
