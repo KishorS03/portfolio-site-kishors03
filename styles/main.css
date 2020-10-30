@@ -197,13 +197,29 @@ body {
 	background-color: lightblue;
 }
 
-#time {
-	font-size: 25px;
-	margin-bottom: -10px;
-	margin-top: 0px;
-	color: red;
+/* Button1 - Time */
+.button1row {
+	display: table;
 }
 
+.button1column {
+	float: right;
+}
+
+#button1 {
+	margin-bottom: -30px;
+}
+
+#time {
+	font-size: 25px;
+	color: red;
+	position: relative;
+	bottom: 22px;
+	left: 10px;
+	margin-bottom: -30px;
+}
+
+/* Button3 - Swap text */
 .button3row {
 	display: table;
 }
@@ -223,5 +239,29 @@ body {
 	bottom: -5px;
 	left: 10px;
 }
+
+/* Button5 - Sports Prompt */
+.button5row {
+	display: table;
+}
+
+.button5column {
+	float: right;
+}
+
+#button5 {
+	margin-bottom: -30px;
+}
+
+#sport {
+	font-size: 25px;
+	color: red;
+	position: relative;
+	bottom: 22px;
+	left: 10px;
+	margin-bottom: -30px;
+}
+
+/* Button7 - Time */
 
 /* End of Assignments code CSS */
