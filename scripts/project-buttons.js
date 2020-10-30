@@ -2,7 +2,16 @@ function theTime() {
 	document.getElementById('time').innerHTML = Date();
 }
 
-document.getElementById('button2').onclick = function() {myFunction()};
-function myFunction() {
-  document.getElementById('button2').innerHTML = "YOU CLICKED ME!";
+function theClicker() {
+	document.getElementById('button2').innerHTML = "I was clicked!";
+}
+
+function toggleText() {
+	var x = document.getElementById("toggle");
+	if (x.innerHTML === "Swap Text") {
+		x.innerHTML = "Click again!";
+	} else {
+		x.innerHTML = "Swap Text";
+	}
+
 }
