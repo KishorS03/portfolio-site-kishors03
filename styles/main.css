@@ -188,12 +188,16 @@ body {
 /* End of Skills page CSS code */
 
 /* Start of Assignments code */
-#buttons {
+.button button {
 	height: 35px;
 	width: auto;
 	font-size: 25px;
 	color: red;
-	margin-bottom: 10px;
+	margin-bottom: -10px;
 	background-color: lightblue;
+}
+
+.button1 {
+	color: blue;
 }
 /* End of Assignments code CSS */
