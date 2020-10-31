@@ -41,7 +41,6 @@ function alert6() {
 }
 
 // Button 7 - Text in the button changes colour
-
 function videoGame() {
   var txt;
   var game = prompt("What is your favorite video game?:", " Watchdogs Legion");
@@ -51,4 +50,24 @@ function videoGame() {
     txt = "My favorite video game is" + game;
   }
   document.getElementById("game").innerHTML = txt;
+}
+
+// Button 8 - Text swap
+function toggleText2() {
+	var x = document.getElementById("toggle2");
+	if (x.innerHTML === "The text will swap when button is clicked") {
+		x.innerHTML = "Click the button to revert";
+	} else {
+		x.innerHTML = "The text will swap when button is clicked";
+	}
+}
+
+// Button 9 - Alert for Project 3
+function alert9() {
+	alert("Project 3 is coming soon");
+}
+
+// Button 10 - 
+function clickMe() {
+	document.getElementById('button10').innerHTML = "The final button - #10"
 }

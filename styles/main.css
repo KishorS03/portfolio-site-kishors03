@@ -262,7 +262,7 @@ body {
 	margin-bottom: -30px;
 }
 
-/* Button7 - Favorite Video Game */
+/* Button7 - Favorite Video Game Prompt */
 .button7row {
 	display: table;
 }
@@ -283,4 +283,25 @@ body {
 	left: 10px;
 	margin-bottom: -30px;
 	}
+
+/* Button 8 - The text will swap*/
+.button8row {
+	display: table;
+}
+
+.button8column {
+	float: right;
+}
+
+#button8 {
+	margin-bottom: -20px;
+}
+
+#toggle2 {
+	font-size: 25px;
+	color: red;
+	position: relative;
+	bottom: -5px;
+	left: 10px;
+}
 /* End of Assignments code CSS */
