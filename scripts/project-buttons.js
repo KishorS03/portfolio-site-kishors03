@@ -1,14 +1,14 @@
-// Button 1
+// Button 1 - Time
 function theTime() {
 	document.getElementById('time').innerHTML = Date();
 }
 
-// Button 2
+// Button 2 - Replaces text on the button
 function theClicker() {
 	document.getElementById('button2').innerHTML = "I was clicked!";
 }
 
-// Button 3
+// Button 3 - swaps text when clicked
 function toggleText() {
 	var x = document.getElementById("toggle");
 	if (x.innerHTML === "Swap Text") {
@@ -18,12 +18,12 @@ function toggleText() {
 	}
 }
 
-// Button 4
+// Button 4 - Alert for Project 1
 function alertp4() {
 	alert("Project 1 is coming soon!");
 }
 
-// Button 5
+// Button 5 - Prompt for your favorite sport with text
 function sportsQ() {
   var txt;
   var sport = prompt("What is your favorite sport?:", " basketball");
@@ -35,7 +35,20 @@ function sportsQ() {
   document.getElementById("sport").innerHTML = txt;
 }
 
-//Button 6 - Alert
+// Button 6 - Alert for Project 2
 function alert6() {
 	alert("Project 2 will be coming soon");
+}
+
+// Button 7 - Text in the button changes colour
+
+function videoGame() {
+  var txt;
+  var game = prompt("What is your favorite video game?:", " Watchdogs Legion");
+  if (game == null || game == "") {
+    txt = "User cancelled the prompt.";
+  } else {
+    txt = "My favorite video game is" + game;
+  }
+  document.getElementById("game").innerHTML = txt;
 }

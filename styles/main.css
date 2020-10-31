@@ -262,6 +262,25 @@ body {
 	margin-bottom: -30px;
 }
 
-/* Button7 - Time */
+/* Button7 - Favorite Video Game */
+.button7row {
+	display: table;
+}
 
+.button7column {
+	float: right;
+}
+
+#button7 {
+	margin-bottom: -30px;
+}
+
+#game {
+	font-size: 25px;
+	color: red;
+	position: relative;
+	bottom: 22px;
+	left: 10px;
+	margin-bottom: -30px;
+	}
 /* End of Assignments code CSS */
