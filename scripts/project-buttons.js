@@ -71,3 +71,17 @@ function alert9() {
 function clickMe() {
 	document.getElementById('button10').innerHTML = "The final button - #10"
 }
+
+// threeNumberSort - Create a JavaScript function, threeNumberSort(),  
+// that prompts the user for 3 numbers and uses conditional statement(s) to sort the numbers from least to greatest. 
+// Display an alert box to show the result. For example: threeNumberSort(0, -1, 4)  returns (4, 0, -1)
+function threeNumberSort() {
+	var numbers;
+	var threenumbers = prompt("Write three numbers:", "");
+	if (threenumbers == null || threenumbers == "") {
+		numbers = "User cancelled prompt";
+	} else {
+		numbers = threenumbers;
+	}
+	document.getElementById("number").innerHTML = numbers;
+}
