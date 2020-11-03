@@ -77,12 +77,12 @@ function clickMe() {
 // For example: largerNumber(3, 18) returns 18
 function largerNumber() {
 	alert("Enter two numbers in the following prompt")
-		var num1 = prompt("Enter the first number", "0");
-		var num2 = prompt("Enter the second number", "0");
-			if (num1 > num2) {
-				alert("The larger number of the two is: " + num1);
-			} else if (num2 > num1) {
-				alert("The larger number of the two is: " + num2);
+		var number1 = prompt("Enter the first number");
+		var number2 = prompt("Enter the second number");
+			if (number1 > number2) {
+				alert("The larger number of the two is: " + number1);
+			} else if (number2 > number1) {
+				alert("The larger number of the two is: " + number2);
 			}
 	}
 
@@ -91,13 +91,13 @@ function largerNumber() {
 // For example: signOfProduct(3, -7, 2) returns The sign is - 
 function signOfProduct() {
 	alert("Enter three numbers in the following prompt")
-		var num1 = prompt("Enter the first number", "0");
-		var num2 = prompt("Enter the second number", "0");
-		var num3 = prompt("Enter the third number", "0");
-		var product = num1 * num2 * num3;
-			if (num1 > 0) {
+		var n1 = prompt("Enter the first number", "0");
+		var n2 = prompt("Enter the second number", "0");
+		var n3 = prompt("Enter the third number", "0");
+		var product = n1 * n2 * n3;
+			if (product > 0) {
 				alert("The sign of the product is: positive");
-			} else if (num2 < 0) {
+			} else if (product < 0) {
 				alert("The larger number of the two is: negative");
 			}
 }
@@ -128,10 +128,23 @@ function threeNumberSort() {
 // Create a JavaScript function, forSumThrees(), that uses a for loop to sum the multiples of 3 under 1000. Log the result to the console
 function forSumThrees() {
 	var sum = 0;
-		for (var i = 0; i < 1000; i++) {
+		for (let i = 0; i < 1000; i++) {
 			if (i % 3 === 0) {
 				sum += i;
 			}
 		}
 	console.log(sum);
+}
+
+// Create a JavaScript function, whileSumThrees(), that uses a while loop to sum the multiples of 3 under 1000. Log the result to the console
+function whileSumThrees() {
+	var sum1 = 0;
+	let x = 0;
+		while (x < 1000) {
+			if (x % 3 === 0) {
+				sum1 += x;
+			}
+		x++;
+		}
+	console.log(sum1)
 }
