@@ -126,3 +126,12 @@ function threeNumberSort() {
 }
 
 // Create a JavaScript function, forSumThrees(), that uses a for loop to sum the multiples of 3 under 1000. Log the result to the console
+function forSumThrees() {
+	var sum = 0;
+		for (var i = 0; i < 1000; i++) {
+			if (i % 3 === 0) {
+				sum += i;
+			}
+		}
+	console.log(sum);
+}
