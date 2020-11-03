@@ -72,16 +72,16 @@ function clickMe() {
 	document.getElementById('button10').innerHTML = "The final button - #10"
 }
 
-// threeNumberSort - Create a JavaScript function, threeNumberSort(),  
-// that prompts the user for 3 numbers and uses conditional statement(s) to sort the numbers from least to greatest. 
-// Display an alert box to show the result. For example: threeNumberSort(0, -1, 4)  returns (4, 0, -1)
-function threeNumberSort() {
-	var numbers;
-	var threenumbers = prompt("Write three numbers:", "");
-	if (threenumbers == null || threenumbers == "") {
-		numbers = "User cancelled prompt";
-	} else {
-		numbers = threenumbers;
+// Create a JavaScript function, largerNumber() 
+// that prompts the user for two integers and uses conditional statement(s) to alert the user to the larger of the two numbers. 
+// For example: largerNumber(3, 18) returns 18
+function largerNumber() {
+	alert("Enter two numbers in the following prompt")
+		var num1 = prompt("Enter the first number");
+		var num2 = prompt("Enter the second number");
+			if (num1 > num2) {
+				alert("The larger number of the two is: " + num1);
+			} else if (num2 > num1) {
+				alert("The larger number of the two is: " + num2);
+			}
 	}
-	document.getElementById("number").innerHTML = numbers;
-}
