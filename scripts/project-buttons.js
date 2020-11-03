@@ -72,6 +72,7 @@ function clickMe() {
 	document.getElementById('button10').innerHTML = "The final button - #10"
 }
 
+
 // Create a JavaScript function, largerNumber() 
 // that prompts the user for two integers and uses conditional statement(s) to alert the user to the larger of the two numbers. 
 // For example: largerNumber(3, 18) returns 18
@@ -96,9 +97,9 @@ function signOfProduct() {
 		var n3 = prompt("Enter the third number", "0");
 		var product = n1 * n2 * n3;
 			if (product > 0) {
-				alert("The sign of the product is: positive");
+				alert("The sign of the product is: positive: " + product);
 			} else if (product < 0) {
-				alert("The larger number of the two is: negative");
+				alert("The larger number of the two is: negative: " + product);
 			}
 }
 
@@ -107,21 +108,21 @@ function signOfProduct() {
 // Display an alert box to show the result. For example: threeNumberSort(0, -1, 4)  returns (4, 0, -1)
 function threeNumberSort() {
 	alert("Enter three numbers in the following prompt")
-		var num1 = prompt("Enter the first number", "0");
-		var num2 = prompt("Enter the second number", "0");
-		var num3 = prompt("Enter the third number", "0");
-			if (num1 < num2 < num3) {
-				alert(num1 + ", " + num2 + ", " + num3);
-			} else if (num1 < num3 < num2) {
-				alert(num1 + ", " + num3 + ", " + num2);
-			} else if (num2 < num1 < num3) {
-				alert(num2 + ", " + num1 + ", " + num3);
-			} else if (num2 < num3 < num1) {
-				alert(num2 + ", " + num3 + ", " + num1);
-			} else if (num3 < num2 < num1) {
-				alert(num3 + ", " + num2 + ", " + num1);
-			} else if (num3 < num1 < num2) {
-				alert(num3 + ", " + num1 + ", " + num2);
+		var sort1 = prompt("Enter the first number", "0");
+		var sort2 = prompt("Enter the second number", "0");
+		var sort3 = prompt("Enter the third number", "0");
+			if (sort1 < sort2 < sort3) {
+				alert(sort1 + ", " + sort2 + ", " + sort3);
+			} else if (sort1 < sort3 < sort2) {
+				alert(sort1 + ", " + sort3 + ", " + sort2);
+			} else if (sort2 < sort1 < sort3) {
+				alert(sort2 + ", " + sort1 + ", " + sort3);
+			} else if (sort2 < sort3 < sort1) {
+				alert(sort2 + ", " + sort3 + ", " + sort1);
+			} else if (sort3 < sort2 < sort1) {
+				alert(sort3 + ", " + sort2 + ", " + sort1);
+			} else if (sort3 < sort1 < sort2) {
+				alert(sort3 + ", " + sort1 + ", " + sort2);
 			}
 }
 
