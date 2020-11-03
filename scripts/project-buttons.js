@@ -77,11 +77,52 @@ function clickMe() {
 // For example: largerNumber(3, 18) returns 18
 function largerNumber() {
 	alert("Enter two numbers in the following prompt")
-		var num1 = prompt("Enter the first number");
-		var num2 = prompt("Enter the second number");
+		var num1 = prompt("Enter the first number", "0");
+		var num2 = prompt("Enter the second number", "0");
 			if (num1 > num2) {
 				alert("The larger number of the two is: " + num1);
 			} else if (num2 > num1) {
 				alert("The larger number of the two is: " + num2);
 			}
 	}
+
+// Create a JavaScript function, signOfProduct(), 
+// that prompts the user for 3 integers and uses conditional statement(s) to output the sign of product of three numbers to the user in an alert. 
+// For example: signOfProduct(3, -7, 2) returns The sign is - 
+function signOfProduct() {
+	alert("Enter three numbers in the following prompt")
+		var num1 = prompt("Enter the first number", "0");
+		var num2 = prompt("Enter the second number", "0");
+		var num3 = prompt("Enter the third number", "0");
+		var product = num1 * num2 * num3;
+			if (num1 > 0) {
+				alert("The sign of the product is: positive");
+			} else if (num2 < 0) {
+				alert("The larger number of the two is: negative");
+			}
+}
+
+// Create a JavaScript function, threeNumberSort(), 
+// that prompts the user for 3 numbers and uses conditional statement(s) to sort the numbers from least to greatest. 
+// Display an alert box to show the result. For example: threeNumberSort(0, -1, 4)  returns (4, 0, -1)
+function threeNumberSort() {
+	alert("Enter three numbers in the following prompt")
+		var num1 = prompt("Enter the first number", "0");
+		var num2 = prompt("Enter the second number", "0");
+		var num3 = prompt("Enter the third number", "0");
+			if (num1 < num2 < num3) {
+				alert(num1 + ", " + num2 + ", " + num3);
+			} else if (num1 < num3 < num2) {
+				alert(num1 + ", " + num3 + ", " + num2);
+			} else if (num2 < num1 < num3) {
+				alert(num2 + ", " + num1 + ", " + num3);
+			} else if (num2 < num3 < num1) {
+				alert(num2 + ", " + num3 + ", " + num1);
+			} else if (num3 < num2 < num1) {
+				alert(num3 + ", " + num2 + ", " + num1);
+			} else if (num3 < num1 < num2) {
+				alert(num3 + ", " + num1 + ", " + num2);
+			}
+}
+
+// Create a JavaScript function, forSumThrees(), that uses a for loop to sum the multiples of 3 under 1000. Log the result to the console
