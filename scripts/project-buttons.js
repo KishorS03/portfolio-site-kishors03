@@ -78,8 +78,8 @@ function clickMe() {
 // For example: largerNumber(3, 18) returns 18
 function largerNumber() {
 	alert("Enter two numbers in the following prompt")
-		var number1 = prompt("Enter the first number");
-		var number2 = prompt("Enter the second number");
+		var number1 = parseInt(prompt("Enter the first number"));
+		var number2 = parseInt(prompt("Enter the second number"));
 			if (number1 > number2) {
 				alert("The larger number of the two is: " + number1);
 			} else if (number2 > number1) {
@@ -125,7 +125,7 @@ function threeNumberSort() {
 				alert(sort3 + ", " + sort1 + ", " + sort2);
 			}
 }
-
+// 8 2 4
 // Create a JavaScript function, forSumThrees(), that uses a for loop to sum the multiples of 3 under 1000. Log the result to the console
 function forSumThrees() {
 	var sum = 0;
@@ -148,4 +148,21 @@ function whileSumThrees() {
 		x++;
 		}
 	console.log(sum1)
+}
+
+// Create a JavaScript function, tenFour() that iterates (counts through) the integers from 1 to 100. 
+// For multiples of 4 print the word Four instead of the number and for the multiples of 10 print Ten. 
+// For numbers which are multiples of both four and ten print TenFour!.
+function tenFour() {
+	for (var i = 1; i <= 100; i++) {
+	 		if (i % 4 === 0 && i % 10 === 0) {
+	 				console.log(i + "TenFour!");
+	 		}	else if (i % 4 === 0) {
+	 				console.log(i + "Four");
+	 		}	else if (i % 10 === 0) {
+	 				console.log(i + "Ten");
+	 		}	else {
+	 				console.log(i);
+	 		}
+	 } 
 }
