@@ -92,9 +92,9 @@ function largerNumber() {
 // For example: signOfProduct(3, -7, 2) returns The sign is - 
 function signOfProduct() {
 	alert("Enter three numbers in the following prompt")
-		var n1 = prompt("Enter the first number", "0");
-		var n2 = prompt("Enter the second number", "0");
-		var n3 = prompt("Enter the third number", "0");
+		var n1 = parseInt(prompt("Enter the first number", "0"));
+		var n2 = parseInt(prompt("Enter the second number", "0"));
+		var n3 = parseInt(prompt("Enter the third number", "0"));
 		var product = n1 * n2 * n3;
 			if (product > 0) {
 				alert("The sign of the product is: positive: " + product);
@@ -108,20 +108,20 @@ function signOfProduct() {
 // Display an alert box to show the result. For example: threeNumberSort(0, -1, 4)  returns (4, 0, -1)
 function threeNumberSort() {
 	alert("Enter three numbers in the following prompt")
-		var sort1 = prompt("Enter the first number", "0");
-		var sort2 = prompt("Enter the second number", "0");
-		var sort3 = prompt("Enter the third number", "0");
-			if (sort1 < sort2 < sort3) {
+		var sort1 = parseInt(prompt("Enter the first number", "0"));
+		var sort2 = parseInt(prompt("Enter the second number", "0"));
+		var sort3 = parseInt(prompt("Enter the third number", "0"));
+			if (sort1 < sort2 && sort2 < sort3) {
 				alert(sort1 + ", " + sort2 + ", " + sort3);
-			} else if (sort1 < sort3 < sort2) {
+			} else if (sort1 < sort3 && sort3 < sort2) {
 				alert(sort1 + ", " + sort3 + ", " + sort2);
-			} else if (sort2 < sort1 < sort3) {
+			} else if (sort2 < sort1 && sort1 < sort3) {
 				alert(sort2 + ", " + sort1 + ", " + sort3);
-			} else if (sort2 < sort3 < sort1) {
+			} else if (sort2 < sort3 && sort3 < sort1) {
 				alert(sort2 + ", " + sort3 + ", " + sort1);
-			} else if (sort3 < sort2 < sort1) {
+			} else if (sort3 < sort2 && sort2 < sort1) {
 				alert(sort3 + ", " + sort2 + ", " + sort1);
-			} else if (sort3 < sort1 < sort2) {
+			} else if (sort3 < sort1 && sort1 < sort2) {
 				alert(sort3 + ", " + sort1 + ", " + sort2);
 			}
 }
