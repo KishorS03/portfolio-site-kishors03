@@ -171,11 +171,12 @@ function tenFour() {
 // The first century spans from the year 1 up to and including the year 100, 
 // The second - from the year 101 up to and including the year 200, etc. For example:
 // centuryFromYear(1705) returns 18, centuryFromYear(1900) returns 19, centuryFromYear(1601) returns 17, centuryFromYear(2000) returns 20
-function centuryFromYear(year) {
+function centuryFromYear() {
+	var year = parseInt(prompt("Write a year to recieve the century it took place in:", "0"))
 	var century = 0;
 	while (year > 0) {
 		year = year -100; 
 		century = century + 1;
 	}
-	return century;
+	alert(century)
 }
