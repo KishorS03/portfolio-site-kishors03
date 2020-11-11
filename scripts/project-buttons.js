@@ -170,11 +170,10 @@ function tenFour() {
 function finalAssignment() {
 	// Uses a prompt from the user and returns an encrypted version
 	var plain = prompt("Enter a message to be encrypted");
-	var ciphertxt = "";
+	var ciphertxt = " ";
 	var firstletter = "";
 	var secondletter = "";
 		plain = plain.split("");
-		plain = plain.replace(",", " ");
 		for (var i = 0; i < plain.length; i = i + 1){
 			if (plain[i].length > 2){
 				firstletter = plain[i][0];
