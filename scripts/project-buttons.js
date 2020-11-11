@@ -188,7 +188,6 @@ function finalAssignment() {
 	document.getElementById("encrypted").innerHTML = ciphertxt;
 }
 
-
 function finalAssignmentV2(){
   // Takes a ciphertext message, alters it by reversing the changes made in the pigified() function, and returns the plaintext to the user
 	ciphertext = document.getElementById("encrypted").innerHTML
