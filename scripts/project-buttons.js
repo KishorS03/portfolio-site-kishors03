@@ -170,16 +170,16 @@ function tenFour() {
 function finalAssignment() {
 	// Uses a prompt from the user and returns an encrypted version
 	var plain = prompt("Enter a message to be encrypted");
-	var ciphertxt = " ";
+	var ciphertxt = "";
 	var firstletter = "";
 	var secondletter = "";
-		plain = plain.split("");
+		plain = plain.split(" ");
 		for (var i = 0; i < plain.length; i = i + 1){
 			if (plain[i].length > 2){
 				firstletter = plain[i][0];
 				secondletter = plain[i][1]; // Saves the second letter of a word
 				ciphertxt += (plain[i]).slice(0).slice(1).slice(1);
-				ciphertxt = ciphertxt.replace("a", "s").replace("o", "i");
+				ciphertxt = ciphertxt.replace("a", "s").replace("o", "i"); // Replaces the letter a to s and the letter o to i
 				ciphertxt += secondletter += firstletter + "sin";
 			} else {
 				ciphertxt += (" " + plain[i] + " "); // If length is 2 or less, the message is unaltered
@@ -187,3 +187,15 @@ function finalAssignment() {
 		}
 	document.getElementById("encrypted").innerHTML = ciphertxt;
 }
+
+function finalAssignmentV2(){
+  // Takes a ciphertext message, alters it by reversing the changes made in the pigified() function, and returns the plaintext to the user
+	document.getElementById("encrypted").innerHTML
+	let plaintext = ""; 
+	encrypted = plaintext;
+    document.getElementById("decrypted").innerHTML = plaintext;
+
+  let cipherList = ciphertext.split(" ");
+  for( let i = 0 ; i < cipherList.length ; i = i + 1 ){ // for each word in the plaintext, do the following
+    }
+  }
