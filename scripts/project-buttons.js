@@ -167,3 +167,35 @@ function tenFour() {
 	 } 
 }
 
+function finalAssignment() {
+	// Uses a prompt from the user and returns an encrypted version
+	let txt = prompt("Enter a message to be encrypted");
+}
+
+function pigified(){
+  // Takes a plaintext message, alters it, and returns the ciphertext to the user
+  let plaintext = prompt("Enter your plaintext message:");
+  let ciphertext = "";
+  let firstletter = "";
+  plaintext = plaintext.split(" "); // String is slplit around spaces to create a list of words
+  for( let i = 0 ; i < plaintext.length ; i = i + 1 ){ // for each word in the plaintext, do the following
+    if (plaintext[i].length > 2) { // If the current word is 3 or more letters, do the following:
+      firstletter = plaintext[i][0]; // Save the first letter of the current word
+      ciphertext += (plaintext[i]).slice(1,) // Add the current word to the ciphertext string, slicing off the first letter  
+      ciphertext += firstletter + "ay "; // Add the first letter and "ay" to the end of the current word 
+    } else {
+      ciphertext += (plaintext[i] + " ")  // Words of length 2 or less are added to the message, unaltered
+    }
+  }
+  document.getElementById("something").innerHTML = ciphertext;
+}
+
+function unpigified(){
+  // Takes a ciphertext message, alters it by reversing the changes made in the pigified() function, and returns the plaintext to the user
+  let ciphertext = prompt("Enter your encrypted message:");
+  let plaintext = "OopA! This function has not been written yet";
+  let cipherList = ciphertext.split(" ");
+  for( let i = 0 ; i < cipherList.length ; i = i + 1 ){ // for each word in the plaintext, do the following
+    }
+  document.getElementById("nothing").innerHTML = plaintext;
+}
