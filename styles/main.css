@@ -305,3 +305,68 @@ body {
 	left: 10px;
 }
 /* End of Assignments code CSS */
+
+/* Encryption Assignment */
+.encryptionrow button{
+	height: 35px;
+	width: auto;
+	font-size: 25px;
+	color: red;
+	margin-bottom: 10px;
+	background-color: lightblue;
+}
+
+.encryptionrow {
+	display: table;
+	float: right;
+	position: relative;
+	top: -500px;
+}
+
+.encryptioncolumn {
+	float: left;
+}
+
+#encryption {
+	margin-bottom: -20px;
+}
+
+#encrypted {
+	font-size: 25px;
+	color: red;
+	position: relative;
+	bottom: 22px;
+	left: -10px;
+	margin-bottom: -30px;
+}
+
+/* Decryption button */
+.decryptionrow button{
+	height: 35px;
+	width: auto;
+	font-size: 25px;
+	color: red;
+	margin-bottom: 10px;
+	background-color: lightblue;
+}
+
+.decryptionrow {
+	display: table;
+	float: right;
+	position: relative;
+	top: -450px;
+	right: -135px;
+}
+
+.decryptioncolumn {
+	float: left;
+}
+
+#decrypted {
+	font-size: 25px;
+	color: red;
+	position: relative;
+	bottom: 22px;
+	left: -10px;
+	margin-bottom: -30px;
+}
