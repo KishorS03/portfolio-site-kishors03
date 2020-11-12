@@ -191,17 +191,17 @@ function finalAssignment(){
 function finalAssignmentV2(){
 	var ciphertext = document.getElementById("encrypted").innerHTML
 	var decrypted = ""; // plaintext
-	var firstletter = "";
-	var secondletter = "";
+	var firstL = "";
+	var secondL = "";
 	ciphertext = ciphertext.split(" ");
 	for (var x = 0; x < ciphertext.length; x = x + 1){
 		if (ciphertext[x].length > 2){
 			ciphertext[x] = ciphertext[x].slice(0, -3);
-			firstletter = ciphertext[x].charAt(ciphertext[x].length -1);
-			secondletter = ciphertext[x].charAt(ciphertext[x].length -2);
+			firstL = ciphertext[x][-1];
+			secondL = ciphertext[x][-2];
 			decrypted += (ciphertext[x]).slice(-1, -2);
 			decrypted += ciphertext[x].replace(/s/g, "a").replace(/i/g, "o").replace(/k/g, "l");
-			decrypted = firstletter += secondletter += decrypted;
+			decrypted = firstL += secondL += decrypted;
 		} else {
 			decrypted += (" " + ciphertext[x] + " ");
 		}
