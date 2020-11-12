@@ -197,8 +197,8 @@ function finalAssignmentV2(){
 	for (var x = 0; x < ciphertext.length; x = x + 1){
 		if (ciphertext[x].length > 2){
 			ciphertext[x] = ciphertext[x].slice(0, -3);
-			firstL = ciphertext[x][-1];
-			secondL = ciphertext[x][-2];
+			firstL = ciphertext[x].charAt(ciphertext[x].length -1);
+			secondL = ciphertext[x].charAt(ciphertext[x].length -2);
 			decrypted += (ciphertext[x]).slice(-1, -2);
 			decrypted += ciphertext[x].replace(/s/g, "a").replace(/i/g, "o").replace(/k/g, "l");
 			decrypted = firstL += secondL += decrypted;
