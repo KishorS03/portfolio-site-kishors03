@@ -167,16 +167,16 @@ function tenFour() {
 	 } 
 }
 
-function finalAssignment() {
+function finalAssignment(){
 	// Uses a prompt from the user and returns an encrypted version
 	var plain = prompt("Enter a message to be encrypted");
 	var ciphertxt = "";
 	var firstletter = "";
 	var secondletter = "";
-	plain = plain.replace(/a/g, "s").replace(/o/g, "i").replace(/l/g, "k"); // Replaces the letter a to s, the letter o to and l to k
   	plain = plain.split(" ");
 		for (var i = 0; i < plain.length; i = i + 1){
 			if (plain[i].length > 2){
+				plain[i] = plain[i].replace(/a/g, "s").replace(/o/g, "i").replace(/l/g, "k"); // Replaces the letter a to s, the letter o to and l to k
 				firstletter = plain[i][0];
 				secondletter = plain[i][1]; // Saves the second letter of a word
 				ciphertxt += (plain[i]).slice(0).slice(1).slice(1);
@@ -189,12 +189,34 @@ function finalAssignment() {
 }
 
 function finalAssignmentV2(){
-  // Takes a ciphertext message, alters it by reversing the changes made in the pigified() function, and returns the plaintext to the user
-	ciphertext = document.getElementById("encrypted").innerHTML
-	let plaintext = ""; 
-    document.getElementById("decrypted").innerHTML = plaintext;
+	var ciphertext = document.getElementById("encrypted").innerHTML
+	var decrypted = ""; // plaintext
+	var firstletter = "";
+	var secondletter = "";
+	ciphertext = ciphertext.split(" ");
+	for (var x = 0; x < ciphertext.length; x = x + 1){
+		if (ciphertext[x].length > 2){
+			ciphertext[x] = ciphertext[x].slice(0, -3);
+			firstletter = ciphertext[x].charAt(ciphertext[x].length -1);
+			secondletter = ciphertext[x].charAt(ciphertext[x].length -2);
+			decrypted += (ciphertext[x]).slice(-1, -2);
+			decrypted += ciphertext[x].replace(/s/g, "a").replace(/i/g, "o").replace(/k/g, "l");
+			decrypted = firstletter += secondletter += decrypted;
+		} else {
+			decrypted += (" " + ciphertext[x] + " ");
+		}
+	}
+	document.getElementById("decrypted").innerHTML = decrypted;
+	console.log(firstletter);
+}
 
-  let cipherList = ciphertext.split(" ");
-  for( let i = 0 ; i < cipherList.length ; i = i + 1 ){ // for each word in the plaintext, do the following
-    }
-  }
+// for (var i = 0; i < text.length; i = i + 1){
+			//	if (text[i].length > 2){
+			//		text = text[i].replace(/s/g, "a").replace(/i/g, "o").replace(/k/g, "l");
+			//		text = text.toString();
+			//		text = text.slice(0, -3);
+			
+
+			// save letters, then slice them oof, then replac the letters, and them add letters 1 and 2
+
+			
