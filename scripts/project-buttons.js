@@ -176,7 +176,7 @@ function finalAssignment(){
   	plain = plain.split(" ");
 		for (var i = 0; i < plain.length; i = i + 1){
 			if (plain[i].length > 2){
-				plain[i] = plain[i].replace(/a/g, "s").replace(/o/g, "i").replace(/l/g, "k"); // Replaces the letter a to s, the letter o to and l to k
+				plain[i] = plain[i].replace(/a/g, "%").replace(/o/g, "~").replace(/l/g, "`"); // Replaces the letter a to s, the letter o to and l to k
 				firstletter = plain[i][0];
 				secondletter = plain[i][1]; // Saves the second letter of a word
 				ciphertxt += (plain[i]).slice(0).slice(1).slice(1);
@@ -197,21 +197,13 @@ function finalAssignmentV2(){
 	for (var x = 0; x < ciphertext.length; x = x + 1){
 		if (ciphertext[x].length > 2){
 			ciphertext[x] = ciphertext[x].slice(0, -3);
+			ciphertext[x] = ciphertext[x].replace(/%/g, "a").replace(/~/g, "o").replace(/`/g, "l");
 			firstL = ciphertext[x].charAt(ciphertext[x].length -1);
 			secondL = ciphertext[x].charAt(ciphertext[x].length -2);
-			// decrypted += (ciphertext[x]).slice(0, -2);
-			//decrypted += ciphertext[x].replace(/s/g, "a").replace(/i/g, "o").replace(/k/g, "l");
-			//decrypted = firstL += secondL += decrypted;
-			decrypted += firstL + secondL + ciphertext[x].replace(/s/g, "a").replace(/i/g, "o").replace(/k/g, "l").slice(0, ciphertext[x].length -2) + " ";
+			decrypted += firstL + secondL + ciphertext[x].replace(/%/g, "a").replace(/~/g, "o").replace(/`/g, "l").slice(0, ciphertext[x].length -2) + " ";
 		} else {
 			decrypted += (" " + ciphertext[x] + " ");
 		}
 	}
 	document.getElementById("decrypted").innerHTML = decrypted;
-	console.log(firstL);
 }
-
-
-			// save letters, then slice them oof, then replac the letters, and them add letters 1 and 2
-
-			
